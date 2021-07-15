@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: callbackhandler-service
+spec:
+  selector:
+    app: callbackhandler
+  ports:
+  - port: 6478
+    targetPort: 6478
